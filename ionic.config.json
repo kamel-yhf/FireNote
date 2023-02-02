@@ -1,0 +1,7 @@
+{
+  "name": "firenote",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

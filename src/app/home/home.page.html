@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title> Fire Notes </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <ion-item
+      mode="ios"
+      *ngFor="let note of notes"
+      button
+      (click)="openNote(note)"
+    >
+      <ion-label> {{note.title}} </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button color="dark" (click)="addNote()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
